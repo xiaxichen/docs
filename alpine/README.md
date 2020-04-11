@@ -16,11 +16,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20200319`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/9ea38be4fece3ca754e8ce2e55669638f8e0a325/x86_64/Dockerfile)
--	[`3.11.5`, `3.11`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/bafe72e7d06184fe1a7e7a0cf65631fe2ddd67b7/x86_64/Dockerfile)
--	[`3.10.4`, `3.10`](https://github.com/alpinelinux/docker-alpine/blob/b05a5ce079ec947e76322ea7cf5900efd7ecae43/x86_64/Dockerfile)
--	[`3.9.5`, `3.9`](https://github.com/alpinelinux/docker-alpine/blob/9becb5e9835cd628110545a4475ff66615a5683e/x86_64/Dockerfile)
--	[`3.8.5`, `3.8`](https://github.com/alpinelinux/docker-alpine/blob/c0919567e0350f0128fcad803d8e79c4ecfdf258/x86_64/Dockerfile)
+-	[`20200319`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/9ea38be4fece3ca754e8ce2e55669638f8e0a325/x86/Dockerfile)
+-	[`3.11.5`, `3.11`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/bafe72e7d06184fe1a7e7a0cf65631fe2ddd67b7/x86/Dockerfile)
+-	[`3.10.4`, `3.10`](https://github.com/alpinelinux/docker-alpine/blob/b05a5ce079ec947e76322ea7cf5900efd7ecae43/x86/Dockerfile)
+-	[`3.9.5`, `3.9`](https://github.com/alpinelinux/docker-alpine/blob/9becb5e9835cd628110545a4475ff66615a5683e/x86/Dockerfile)
+-	[`3.8.5`, `3.8`](https://github.com/alpinelinux/docker-alpine/blob/c0919567e0350f0128fcad803d8e79c4ecfdf258/x86/Dockerfile)
+
+[![i386/alpine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/alpine.svg?label=i386/alpine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/alpine/)
 
 # Quick reference
 
@@ -60,7 +62,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.7
+FROM i386/alpine:3.7
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
